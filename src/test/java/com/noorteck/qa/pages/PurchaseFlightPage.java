@@ -102,6 +102,10 @@ public class PurchaseFlightPage {
 	}
 
 	public void CardDate(String month, String year) {
+		
+		CardMonthField.clear();
+		CardYearField.clear();
+		
 
 		CardMonthField.sendKeys(month);
 

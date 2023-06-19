@@ -1,5 +1,6 @@
 Feature: Purchase Flight Page Functionality
 
+ @US-123
   Scenario Outline: Verify user able to Purchase a Flight
     Given User navigates to Purchase Page "https://blazedemo.com/purchase.php"
     When User enters name "<name>"
@@ -15,6 +16,7 @@ Feature: Purchase Flight Page Functionality
     And User Clicks Submit button
     Then User verifies confirmation message "<ConfirmationTextField>"
 
+    @scrum
     Examples: 
       | name   | address      | city     | state | zipCode | cardType         | creditCardNumber | creditCardMont | creditCardYear | nameOnCard          | ConfirmationTextField              |
       | John   | 123 drive st | Cali     | CA    | Male    | Visa             |    1253644896121 |             11 |           2016 | JOHN CENA           | Thank you for your purchase today! |
